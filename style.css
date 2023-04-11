@@ -1,0 +1,382 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  font-family: Tahoma, Geneva, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  padding: 0;
+  margin: 0;
+}
+
+/*-------------  header ------------- */
+.header-container {
+  border-top: solid 10px #c40a0a;
+  width: 100vw;
+}
+
+.container {
+  height: 110px;
+  padding: 10px;
+  cursor: pointer;
+  max-width: 1140px;
+  margin: auto;
+}
+
+.container img {
+  height: 100%;
+  width: auto;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+/* end-header */
+
+/*------------- menu -------------*/
+.menu {
+  height: 30px;
+  background-color: #e7e9ed;
+  box-shadow: 3px -5px 7px #9c1010;
+  padding: 0 3px;
+  display: flex;
+}
+
+.menu .menu-item {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 1px 0;
+  margin-top: 1px;
+  cursor: pointer;
+}
+
+.menu .menu-item-title:hover {
+  background-color: #9c1010;
+  color: white;
+}
+
+.menu-item .menu-item-title {
+  left: 0;
+  display: flex;
+  width: 100%;
+  padding: 2px 0;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.menu-item-title img {
+  height: 16px;
+  width: 16px;
+  margin-right: 5px;
+}
+
+.menu-item:hover .menu-item-title {
+  background-color: #9c1010;
+}
+
+.menu-item .drop-content {
+  position: relative;
+  left: 0;
+  top: 1px;
+  background-color: #f0f0f0;
+  min-width: 300px;
+  width: 40%;
+  border: 1px solid #c4c4c4;
+  z-index: 999;
+  display: none;
+}
+
+/* show drop down */
+.menu-item:hover .drop-content {
+  display: block;
+}
+
+.menu-item .drop-content div {
+  padding: 3px 10px;
+}
+
+.menu-item .drop-content div:hover {
+  background-color: #9c1010;
+  color: white;
+}
+
+/* icon drop down (icon tam giác quay xuống) */
+.menu .menu-item > i {
+  display: inline-block;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  line-height: 100%;
+  vertical-align: middle;
+  color: #96979a;
+  font-size: 12px;
+  margin-top: 4px;
+}
+/* end menu */
+
+/*------------- trang chủ -------------*/
+.homepage-btn {
+  width: 80px;
+  font-size: 14px;
+  color: #9c1010;
+  margin-top: 5px;
+  background-color: #e7e9ed;
+  border-left: 3px solid #9c1010;
+  line-height: 23px;
+  text-align: center;
+  padding: 1px;
+  cursor: pointer;
+}
+.homepage-btn:hover {
+  text-decoration: underline;
+}
+/* end trang chủ */
+
+/*------------- Sidebar (Nav bar) -------------*/
+.nav-content {
+  width: 19%;
+  padding-top: 10px;
+  vertical-align: top;
+}
+
+.nav-block {
+  background: #f2f1eb;
+  padding: 20px 10px 20px 20px;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.nav-block-title {
+  font-weight: 600;
+  text-align: center;
+  color: #8c1515;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.nav-block-content {
+  background-color: transparent;
+  color: #337ab7;
+  display: block;
+  text-decoration: none;
+  padding: 5px 7px;
+  border-bottom: 1px solid #ccc;
+  line-height: 2;
+  font-size: 1em !important;
+}
+
+.nav-block-content:hover {
+  background-color: #dfdedb;
+  color: #9c1010;
+  cursor: pointer;
+}
+
+.nav-block-content span {
+  margin-left: -7px;
+}
+
+.name {
+  font-weight: bold;
+  text-align: center;
+  color: #8c1515;
+  margin-top: 5px !important;
+  text-transform: uppercase;
+  padding-left: 5px;
+}
+
+.count-email {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-color: #777;
+  border-radius: 10px;
+}
+
+.fa-chevron-right {
+  font-size: 8px;
+  color: #c40a0a;
+  position: relative;
+  left: -12px;
+}
+
+.drop {
+  margin-left: 20px;
+  padding: 0;
+  display: none;
+}
+.drop:hover {
+  background-color: #f2f1eb;
+  color: #4a95d6;
+}
+.drop div {
+  padding: 5px 3px;
+  border-bottom: 1px solid #c8bebe;
+}
+.drop div:hover {
+  display: block;
+  background-color: #dfdedb;
+  color: #9c1010;
+  cursor: pointer;
+}
+.none-border {
+  border: 0;
+}
+.hover-dropdown:hover .drop {
+  display: block;
+}
+/* end Sidebar (Nav bar) */
+
+/*------------- Thông tin sinh viên -------------*/
+.info-content {
+  width: 81%;
+  padding-top: 10px;
+  vertical-align: top;
+  margin: 0px;
+}
+
+.info-content-header {
+  padding: 5px;
+  width: 100%;
+}
+.info-content-header div {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  /* color: #9c1010; */
+  color: red;
+  text-transform: uppercase;
+  margin: 0 20px 0px 20px;
+  padding: 15px;
+}
+.info-content-header hr {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.info-content-title-text {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  font-weight: bold;
+  /* color: #8c1515; */
+  color: red;
+  vertical-align: middle;
+  line-height: 2em;
+  padding: 10px 0px 23px 0px;
+}
+.info-content-title hr {
+  line-height: 4px;
+  border: 3px solid #ff9900;
+  display: block;
+  width: 80%;
+}
+.info-content-body {
+  font-family: "Arimo", sans-serif;
+  /* font: 16px; */
+  font-size: 16px;
+  color: #343434;
+  font-weight: 400;
+  line-height: 2em;
+  margin-top: 20px;
+}
+.info-content-body .avatar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* margin: auto; */
+}
+.info-content-body em {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+.info-content-body strong {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 17px;
+}
+.info-content-body .avatar img {
+  margin: 0 auto;
+  width: 200px;
+  padding: 4px;
+  border-radius: 3px;
+  border: 1px solid #e1e0e0;
+  margin-bottom: 5px;
+  box-shadow: 8px 8px 8px #a9bfcb;
+}
+.info-content-body .avatar p {
+  text-align: center;
+}
+.info-content-body strong {
+  font-weight: 600;
+}
+.info-content-block .row {
+  display: flex;
+}
+.info-content-block-note {
+  padding-left: 0px;
+  margin-top: 50px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33333333%;
+}
+.col-5 {
+  width: 50%;
+  padding: 0px 15px;
+}
+/* End thông tin sinh viên */
+
+/*------------- Footer -------------*/
+.footer {
+  width: 100%;
+  float: left;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.1;
+}
+.footerMain {
+  width: 100%;
+  float: left;
+  background: url(public/footer.jpg) no-repeat top;
+  height: 100px;
+}
+.footerLeft {
+  width: 40%;
+  float: left;
+  margin: 2%;
+}
+.footerRight {
+  width: 35%;
+  float: right;
+  text-align: right;
+  margin-right: 6.5%;
+  color: #fff;
+}
+.footerRight hr {
+  margin: 10px 0;
+  border: 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #fff;
+}
